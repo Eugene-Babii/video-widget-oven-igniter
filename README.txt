@@ -1,6 +1,6 @@
 #video-widget
 
-#1 Сopy the folder "video-widget" (includes two files: video-widget.css & video-widget.min.js)
+#1 Сopy two files from repo: video-widget.css & video-widget.min.js
 and place next to the index.html
 
 #2 Place these <link> tags in the <head>:
