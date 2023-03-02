@@ -1262,13 +1262,32 @@ body.lock {
   .swiper-slide
   .video-card-text-container {
   position: absolute;
-  bottom: 9%;
-  left: 27%;
+  bottom: 10%;
+  left: 40%;
   z-index: 16;
-  width: 100%;
+  width: 80%;
   color: #fff;
   font-style: normal;
   line-height: 150%;
+  transform: translate(-40%, 10%);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .pp-gallery-container.active
+    .gallery
+    .gallery-media
+    .content
+    .content-swiper
+    .gallery-swiper-container
+    .gallery-swiper
+    .swiper-slide
+    .video-card-text-container {
+    display: none;
+  }
 }
 .pp-gallery-container.active
   .gallery
@@ -1279,6 +1298,7 @@ body.lock {
   .gallery-swiper
   .swiper-slide
   .video-card-text-container
+  .video-card-text-wrapper
   .brand {
   font-weight: 500;
   font-size: 18px;
@@ -1293,10 +1313,74 @@ body.lock {
   .gallery-swiper
   .swiper-slide
   .video-card-text-container
+  .video-card-text-wrapper
   .title {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.75;
+}
+.pp-gallery-container.active
+  .gallery
+  .gallery-media
+  .content
+  .content-swiper
+  .gallery-swiper-container
+  .gallery-swiper
+  .swiper-slide
+  .video-card-text-container
+  .video-card-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pp-gallery-container.active
+  .gallery
+  .gallery-media
+  .content
+  .content-swiper
+  .gallery-swiper-container
+  .gallery-swiper
+  .swiper-slide
+  .video-card-text-container
+  .video-card-button-wrapper
+  a:hover {
+  border-bottom-color: transparent;
+  color: white !important;
+}
+.pp-gallery-container.active
+  .gallery
+  .gallery-media
+  .content
+  .content-swiper
+  .gallery-swiper-container
+  .gallery-swiper
+  .swiper-slide
+  .video-card-text-container
+  .video-card-button-wrapper
+  .video-card-button {
+  background-color: #4288f0;
+  color: white;
+  text-decoration: none;
+  border-bottom-color: transparent;
+  padding: 4px 8px;
+  border-radius: 5px;
+  min-width: 83px;
+  text-align: center;
+  border: 1px solid white;
+}
+.pp-gallery-container.active
+  .gallery
+  .gallery-media
+  .content
+  .content-swiper
+  .gallery-swiper-container
+  .gallery-swiper
+  .swiper-slide
+  .video-card-text-container
+  .video-card-button-wrapper
+  .video-card-button:hover {
+  background-color: #000;
+  border: 1px solid white;
 }
 .pp-gallery-container.active
   .gallery
